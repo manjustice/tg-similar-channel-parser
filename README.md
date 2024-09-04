@@ -28,3 +28,6 @@ You must have api_id and api_hash to get session string otherwise follow this
 docker build -t tg-similar-channel-parser .
 docker run -d -p 5900:5900 tg-similar-channel-parser
 ```
+
+To check if the script is working, you can connect to the vnc server using any vnc client. 
+Port to connect is 5900

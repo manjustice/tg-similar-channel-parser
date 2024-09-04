@@ -524,7 +524,11 @@ class Telegram:
 
         if found_ads_channels:
             root_logger.info("Sending data to google sheet")
-            display_data_in_google_sheet(found_ads_channels)
+
+            try:
+                display_data_in_google_sheet(found_ads_channels)
+            except Exception:
+                pass
 
             for channel in found_ads_channels:
                 if isinstance(channel, Channel):
